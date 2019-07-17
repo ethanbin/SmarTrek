@@ -42,4 +42,9 @@ def index():
 def index(info):
     return request.body
 
+@route('/test' , method=['OPTIONS', 'GET'])
+@enable_cors
+def test():
+    return '{"msg": "test success!"}'
+
 run(host='localhost', port=os.environ.get('PORT', 5000))

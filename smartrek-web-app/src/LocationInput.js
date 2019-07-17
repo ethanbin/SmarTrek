@@ -10,6 +10,13 @@ export default class LocationInput extends React.Component {
     endLocation: '',
   };
 
+  async componentDidMount(){
+  	const url = 'http://localhost:5000/test';
+  	const response = await fetch(url);
+  	const data = await response.json();
+  	console.log(data.msg);
+  }
+
   sendData = (e) => {
     e.preventDefault();
     const axios = require('axios');
