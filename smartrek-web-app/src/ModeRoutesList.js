@@ -5,7 +5,7 @@ export default class ModeRoutesList extends React.Component {
   renderArray = (array) => {
     return (
       array.map((item, index) =>
-        <li key={index + 1}>Route #{index + 1}: {item.name} - {item.rating}</li>
+        <li key={index + 1}>Route #{index + 1}: {item.name} - {item.rating} safety rating</li>
       )
     )
   }
