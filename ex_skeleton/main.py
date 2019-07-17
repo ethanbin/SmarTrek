@@ -37,9 +37,10 @@ def img(filepath):
 def index():
     return template("index.html")
 
-@route('/dataplace/<info>' , method=['OPTIONS', 'POST'])
+@route('/sendLocations/<info>' , method=['OPTIONS', 'POST'])
 @enable_cors
 def index(info):
+    # print(request.body)
     return request.body
 
 @route('/test' , method=['OPTIONS', 'GET'])

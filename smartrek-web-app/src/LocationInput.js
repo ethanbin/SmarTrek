@@ -3,12 +3,30 @@ import { Form, Button } from 'react-bootstrap';
 
 import './LocationInput.css';
 
+/**
+ * TODO
+ * - get rid of the copy/pasted handleChange code
+ */
+
 export default class LocationInput extends React.Component {
 
-  state = {
-    startLocation: '',
-    endLocation: '',
-  };
+  constructor(props) {
+    super(props);
+    this.handleStartChange = this.handleStartChange.bind(this);
+    this.handleEndChange = this.handleEndChange.bind(this);
+    this.state = {
+      startLocation: '',
+      endLocation: '',
+    };
+  }
+
+  handleStartChange(e) {
+    this.setState({startLocation: e.target.value});
+  }
+
+  handleEndChange(e) {
+    this.setState({endLocation: e.target.value});
+  }
 
   async componentDidMount(){
   	const url = 'http://localhost:5000/test';
@@ -20,7 +38,7 @@ export default class LocationInput extends React.Component {
   sendData = (e) => {
     e.preventDefault();
     const axios = require('axios');
-    axios.post(`http://localhost:5000/dataplace/hey`, {
+    axios.post(`http://localhost:5000/sendLocations/hey`, {
       params: {
         startLocation: this.state.startLocation,
         endLocation: this.state.endLocation,
@@ -38,6 +56,7 @@ export default class LocationInput extends React.Component {
             <Form.Control
               type="text"
               placeholder="20 West 34th Street, New York, NY 10001, USA"
+              onChange={this.handleStartChange}
             />
           </Form.Group>
           <Form.Group controlId="formEndInput">
@@ -45,6 +64,7 @@ export default class LocationInput extends React.Component {
             <Form.Control
               type="text"
               placeholder="West 44th Street & 45th Street, New York, NY 10036, USA"
+              onChange={this.handleEndChange}
             />
           </Form.Group>
           <Button
