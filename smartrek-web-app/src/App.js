@@ -9,7 +9,7 @@ import './App.css';
 export default class App extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div className="appContainer">
         <div className="leftContainer">
           <h1>SmarTrek</h1>
           <LocationInput />
@@ -19,6 +19,6 @@ export default class App extends React.Component {
           <RouteMap />
         </div>
       </div>
-      );
+    );
   }
 }
