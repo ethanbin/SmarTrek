@@ -25,7 +25,6 @@ export default class RouteMap extends React.Component {
 
     return (
       <div className="routeMapContainer">
-        <p>map of selected route will be shown here</p>
         <MyMapComp
           isMarkerShown
           googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
