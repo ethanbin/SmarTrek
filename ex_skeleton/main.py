@@ -37,15 +37,15 @@ def img(filepath):
 def index():
     return template("index.html")
 
-@route('/sendLocations/<info>' , method=['OPTIONS', 'POST'])
+@route('/sendLocations/<test>' , method=['OPTIONS', 'GET'])
 @enable_cors
-def index(info):
-    # print(request.body)
-    return request.body
+def index(test):
+    return test
 
+arr = ['a', 'b', 'c']
 @route('/test' , method=['OPTIONS', 'GET'])
 @enable_cors
 def test():
-    return '{"msg": "test success!"}'
+    return json.dumps(arr)
 
-run(host='localhost', port=os.environ.get('PORT', 5000))
+run(host='localhost', port=os.environ.get('PORT', 5000), reloader=True)

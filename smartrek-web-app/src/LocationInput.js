@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
-
+// import EndpointCaller;
 import './LocationInput.css';
 
 /**
@@ -28,23 +28,33 @@ export default class LocationInput extends React.Component {
     this.setState({endLocation: e.target.value});
   }
 
+  // async componentDidMount(){
+  // 	const url = 'http://localhost:5000/test';
+  // 	const response = await fetch(url);
+  // 	const data = await response.json();
+  // 	console.log(data.msg);
+  // }
+
   async componentDidMount(){
   	const url = 'http://localhost:5000/test';
   	const response = await fetch(url);
   	const data = await response.json();
-  	console.log(data.msg);
+  	console.log(data);
   }
 
-  sendData = (e) => {
+  sendData = async e => {
+    let obj = {
+        params: {
+          startLocation: this.state.startLocation,
+          endLocation: this.state.endLocation,
+      }};
+
     e.preventDefault();
-    const axios = require('axios');
-    axios.post(`http://localhost:5000/sendLocations/hey`, {
-      params: {
-        startLocation: this.state.startLocation,
-        endLocation: this.state.endLocation,
-      }
-    }).then((res) => console.log(res))
-    .catch(err => console.log(err));
+    const url = 'http://localhost:5000/sendLocations/' + JSON.stringify(obj);
+    const response = await fetch(url);
+    console.log(response);
+    const data = await response.json();
+  	console.log(data);
   };
 
   render() {
