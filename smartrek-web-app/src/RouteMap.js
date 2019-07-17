@@ -4,9 +4,7 @@ import { GoogleMap, Marker, withGoogleMap, withScriptjs } from 'react-google-map
 import './RouteMap.css';
 
 /**
- *
  * TODO
- *
  * - figure out an api key to render the map
  * - go over the website again to find route displaying
  * https://tomchentw.github.io/react-google-maps/
