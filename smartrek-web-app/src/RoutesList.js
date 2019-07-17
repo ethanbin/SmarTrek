@@ -59,14 +59,6 @@ export default class RoutesList extends React.Component {
     )
   }
 
-  renderArray = (array) => {
-    return (
-      array.map((item, index) =>
-        <li key={index + 1}>Route #{index + 1}: {item.name} - {item.rating}</li>
-      )
-    )
-  }
-
   onSelectTab = (value) => {
     console.log(value);
     this.props.selectTab(value);
