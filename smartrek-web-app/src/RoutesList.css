@@ -1,0 +1,6 @@
+.routesListContainer {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 5px;
+}
