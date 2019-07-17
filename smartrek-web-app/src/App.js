@@ -10,11 +10,15 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <h1>SmarTrek</h1>
-        <LocationInput />
-        <RoutesList />
-        <RouteMap />
+        <div className="leftContainer">
+          <h1>SmarTrek</h1>
+          <LocationInput />
+          <RoutesList />
+        </div>
+        <div className="rightContainer">
+          <RouteMap />
+        </div>
       </div>
-    );
+      );
   }
 }
