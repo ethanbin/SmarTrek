@@ -2,6 +2,7 @@ import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 // import EndpointCaller;
 import './LocationInput.css';
+import {talk} from './APIInterface.js'
 
 /**
  * TODO
@@ -36,25 +37,18 @@ export default class LocationInput extends React.Component {
   // }
 
   async componentDidMount(){
-  	const url = 'http://localhost:5000/test';
-  	const response = await fetch(url);
-  	const data = await response.json();
-  	console.log(data);
+    let test = await talk('test');
+  	console.log(test);
   }
 
   sendData = async e => {
     let obj = {
-        params: {
           startLocation: this.state.startLocation,
           endLocation: this.state.endLocation,
-      }};
-
+      };
     e.preventDefault();
-    const url = 'http://localhost:5000/sendLocations/' + JSON.stringify(obj);
-    const response = await fetch(url);
-    console.log(response);
-    const data = await response.json();
-  	console.log(data);
+    let locations = await talk('sendLocations', obj);
+    console.log(locations);
   };
 
   render() {
