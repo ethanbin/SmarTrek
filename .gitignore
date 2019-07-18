@@ -181,3 +181,7 @@ node_modules/
 
 .DS_Store
 .idea/
+
+
+#ignore key getting script
+ex_skeleton/getKey.py
