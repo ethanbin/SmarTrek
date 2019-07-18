@@ -5,6 +5,10 @@ import re
 import getKey
 
 
+def bytesIO_to_obj(bytesIO):
+    return json.loads(bytesIO.read().decode('UTF-8'))
+
+
 def get_api_result(start, destination, mode=None):
     gmaps = googlemaps.Client(key=getKey.googleKey())
     result = gmaps.directions(start, destination, mode=mode, alternatives=True)
@@ -139,4 +143,7 @@ def main(start, destination):
 if __name__ == '__main__':
     start = 'College of staten island'
     destination = 'wagner college, staten island'
+    obj = '{"startLocation": "college of staten island", "endLocation": "17 amsterdam place, staten island, new york"}'
+    parsed = json.loads(obj)
+    print(parsed['startLocation'])
     print(main(start, destination))
