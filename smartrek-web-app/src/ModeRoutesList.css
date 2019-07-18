@@ -1,0 +1,21 @@
+.routesList {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modeRoutesListRoute {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 5px 0 5px 5px;
+  margin-top: 5px;
+}
+
+.modeRoutesListRoute:hover {
+  border: 1px solid #007bff;
+}
+
+.route-selected {
+  color: #fff;
+  background: #007bff;
+}

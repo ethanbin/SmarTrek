@@ -1,8 +1,6 @@
 import React from 'react';
 import { GoogleMap, Marker, withGoogleMap, withScriptjs } from 'react-google-maps';
 
-import './RouteMap.css';
-
 /**
  * TODO
  * - figure out an api key to render the map
@@ -16,10 +14,10 @@ export default class RouteMap extends React.Component {
     const MyMapComp = withScriptjs(withGoogleMap((props) =>
       <GoogleMap
         defaultZoom={8}
-        defaultCenter={{ lat: 32, lng:  34}}
+        defaultCenter={{ lat: 40.7677773, lng:  -73.9718324}}
       >
         {props.isMarkerShown &&
-          <Marker position={{ lat: 32, lng: 34 }} />}
+          <Marker position={{ lat: 40.7677773, lng: -73.9718324 }} />}
       </GoogleMap>
     ));
 

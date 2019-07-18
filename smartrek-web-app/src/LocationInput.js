@@ -54,6 +54,7 @@ export default class LocationInput extends React.Component {
   render() {
     return (
       <div className="formContainer">
+        <h3>Where do you want to go?</h3>
         <Form onSubmit={this.sendData}>
           <Form.Group controlId="formStartInput">
             <Form.Label>Enter your starting location</Form.Label>
@@ -75,6 +76,7 @@ export default class LocationInput extends React.Component {
             variant="primary"
             type="submit"
             onSubmit={this.sendData}
+            disabled={this.state.startLocation === '' || this.state.endLocation === ''}
           >
             Let's go!
           </Button>

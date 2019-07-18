@@ -11,11 +11,18 @@ export default class App extends React.Component {
 
   state = {
     selectedTab: 'car',
+    selectedRoute: {},
   };
 
   pageChange = (value) => {
     if (!(value === this.state.selectedTab)) {
       this.setState({selectedTab: value});
+    }
+  };
+
+  routeChange = (route) => {
+    if (!(route === this.state.selectRoute)) {
+      this.setState({selectedRoute: route});
     }
   };
 
@@ -25,11 +32,16 @@ export default class App extends React.Component {
         <div className="leftContainer">
           <h1>SmarTrek</h1>
           <LocationInput />
-          <RoutesList selectTab={this.pageChange} selected={this.state.selectedTab} />
+          <RoutesList
+            selectRoute={this.routeChange}
+            selectedRoute={this.state.selectedRoute}
+            selectTab={this.pageChange}
+            selectedTab={this.state.selectedTab}
+          />
         </div>
         <div className="rightContainer">
           <RouteMap />
-          <RouteDirections />
+          <RouteDirections selectedRoute={this.state.selectedRoute} />
         </div>
       </div>
     );

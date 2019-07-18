@@ -11,11 +11,14 @@ export default class DirectionsList extends React.Component {
   };
 
   renderDirections = () => {
-    const directions = [];
-    this.state.directions.forEach(function(step) {
-      directions.push(<li key={step}>{step}</li>);
-    });
-    return directions;
+    if (this.props.directions) {
+      const directions = [];
+      this.props.directions.forEach(function(step) {
+        console.log(step);
+        directions.push(<li key={step}><b>{step[1]}</b>: {step[0]}</li>);
+      });
+      return directions;
+    }
   }
 
   render() {
