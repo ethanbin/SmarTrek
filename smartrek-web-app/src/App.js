@@ -12,6 +12,7 @@ export default class App extends React.Component {
   state = {
     selectedTab: 'car',
     selectedRoute: {},
+    routes: {},
   };
 
   pageChange = (value) => {
@@ -26,17 +27,25 @@ export default class App extends React.Component {
     }
   };
 
+  loadRoutes = (routes) => {
+    console.log('routes', routes);
+    this.setState({routes: routes});
+  }
+
   render() {
     return (
       <div className="appContainer">
         <div className="leftContainer">
           <h1>SmarTrek</h1>
-          <LocationInput />
+          <LocationInput
+            loadRoutes={this.loadRoutes}
+          />
           <RoutesList
             selectRoute={this.routeChange}
             selectedRoute={this.state.selectedRoute}
             selectTab={this.pageChange}
             selectedTab={this.state.selectedTab}
+            newRoutes={this.state.routes}
           />
         </div>
         <div className="rightContainer">

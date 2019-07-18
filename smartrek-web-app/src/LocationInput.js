@@ -18,6 +18,7 @@ export default class LocationInput extends React.Component {
     this.state = {
       startLocation: '',
       endLocation: '',
+      routes: {},
     };
   }
 
@@ -36,12 +37,13 @@ export default class LocationInput extends React.Component {
   // 	console.log(data.msg);
   // }
 
-  async componentDidMount(){
-    let test = await talk('test');
-  	console.log(test);
-  }
+  // async componentDidMount(){
+  //   let test = await talk('test');
+  // 	console.log(test);
+  // }
 
   sendData = async e => {
+    console.log('locations sent');
     let obj = {
           startLocation: this.state.startLocation,
           endLocation: this.state.endLocation,
@@ -49,6 +51,8 @@ export default class LocationInput extends React.Component {
     e.preventDefault();
     let locations = await talk('sendLocations', obj);
     console.log(locations);
+    this.setState({routes: locations});
+    this.props.loadRoutes(this.state.routes);
   };
 
   render() {

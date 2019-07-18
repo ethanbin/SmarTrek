@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
-import newRoutes from './newRoutes.json';
+// import newRoutes from './newRoutes.json';
 
 import ModeRoutesList from './ModeRoutesList';
 
@@ -16,7 +16,8 @@ export default class RoutesList extends React.Component {
       {name: 'route 3', rating: 1, mode: 'walk'},
       {name: 'route 4', rating: 2, mode: 'bike'},
     ],
-    newRoutes,
+    newRoutes: {},
+    // newRoutes,
     tabs: [
       {value: 'car', label: 'Car'},
       {value: 'transit', label: 'Transit'},
@@ -31,6 +32,10 @@ export default class RoutesList extends React.Component {
 
   routeChange = (route) => {
     this.props.selectRoute(route);
+  }
+
+  componentDidMount() {
+    this.setState({newRoutes: this.props.newRoutes});
   }
 
   render() {
@@ -56,7 +61,7 @@ export default class RoutesList extends React.Component {
           selectedRoute={this.props.selectedRoute}
           selectedTab={this.props.selectedTab}
           routes={this.state.routes}
-          newRoutes={this.state.newRoutes}
+          newRoutes={this.props.newRoutes}
         />
       </div>
     );

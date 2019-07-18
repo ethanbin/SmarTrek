@@ -7,7 +7,11 @@ export default class ModeRoutesList extends React.Component {
   renderArray = (array) => {
     return (
       array.map((item, index) =>
-        <li key={index + 1}>Route #{index + 1}: {item.name} - {item.rating} safety rating</li>
+        <li
+          key={index + 1}
+        >
+          Route #{index + 1}: {item.name} - {item.rating} safety rating
+        </li>
       )
     )
   }
@@ -34,31 +38,33 @@ export default class ModeRoutesList extends React.Component {
           onClick={() => this.onSelectRoute(item)}
           className={"modeRoutesListRoute" + (this.props.selectedRoute === item ? " route-selected" : "")}
         >
-          Route #{index + 1}: {Math.round(item.score)} safety rating, {item.time}
+          Route #{index + 1}: {item.time} <br /><i>{index === 0 ? "Safest Route" : `${item.percent}% more dangerous`}</i>
         </div>
       )
     )
   }
 
   renderNewRoutes = () => {
-    let routes;
-    switch (this.props.selectedTab) {
-      case 'car':
-        routes = this.props.newRoutes.driving;
-        break;
-      case 'transit':
-        routes = this.props.newRoutes.transit;
-        break;
-      case 'walk':
-        routes = this.props.newRoutes.walking;
-        break;
-      case 'bike':
-        routes = this.props.newRoutes.bicycling;
-        break;
-      default:
-        break;
+    if (this.props.newRoutes && this.props.newRoutes.driving) {
+      let routes;
+      switch (this.props.selectedTab) {
+        case 'car':
+          routes = this.props.newRoutes.driving;
+          break;
+        case 'transit':
+          routes = this.props.newRoutes.transit;
+          break;
+        case 'walk':
+          routes = this.props.newRoutes.walking;
+          break;
+        case 'bike':
+          routes = this.props.newRoutes.bicycling;
+          break;
+        default:
+          break;
+      }
+      return this.renderNewArray(routes);
     }
-    return this.renderNewArray(routes);
   }
 
   render() {
