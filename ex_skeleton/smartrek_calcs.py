@@ -93,7 +93,7 @@ def calc_score(mode, accidents_per_points):
     elif mode == 'cycling':
         score = score_cycling(accidents_per_points)
     elif mode == 'walking':
-        score == score_walking(accidents_per_points)
+        score = score_walking(accidents_per_points)
     return score
 
 
@@ -135,12 +135,15 @@ def main(start, destination):
             accidents_per_points = get_accidents(points_list)
             score = calc_score(mode, accidents_per_points)
             mode_dict[mode].append(
-                {'route': i, 'score': score, 'distance': distance,
-                 'time': time, 'instructions': directions})
+                {'route': i, 'points': points_list, 'score': score,
+                 'distance': distance, 'time': time, 'instructions':
+                     directions})
     return rank_routes(mode_dict)
 
 
 if __name__ == '__main__':
+    start = 'College of staten island'
+    destination = 'wagner college, staten island'
     start = 'college of staten island'
     destination = '17 amsterdam place, staten island, new york'
     print(main(start, destination))
