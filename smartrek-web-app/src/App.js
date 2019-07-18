@@ -49,7 +49,7 @@ export default class App extends React.Component {
           />
         </div>
         <div className="rightContainer">
-          <RouteMap />
+          <RouteMap points={this.state.selectedRoute.points} />
           <RouteDirections selectedRoute={this.state.selectedRoute} />
         </div>
       </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { GoogleMap, Marker, withGoogleMap, withScriptjs } from 'react-google-maps';
 
+import key from './key.json';
+
 /**
  * TODO
  * - figure out an api key to render the map
@@ -9,15 +11,24 @@ import { GoogleMap, Marker, withGoogleMap, withScriptjs } from 'react-google-map
  */
 
 export default class RouteMap extends React.Component {
-  render() {
 
+  state = {
+    points: [],
+  }
+
+  render() {
+    const points = (this.props.points ? this.props.points : []);
     const MyMapComp = withScriptjs(withGoogleMap((props) =>
       <GoogleMap
-        defaultZoom={8}
+        defaultZoom={10}
         defaultCenter={{ lat: 40.7677773, lng:  -73.9718324}}
       >
-        {props.isMarkerShown &&
-          <Marker position={{ lat: 40.7677773, lng: -73.9718324 }} />}
+        {props.points.map((marker, index) => (
+          <Marker
+            position={{ lat: marker.lat, lng: marker.lng }}
+            key={index}
+          />
+        ))}
       </GoogleMap>
     ));
 
@@ -25,7 +36,8 @@ export default class RouteMap extends React.Component {
       <div className="routeMapContainer">
         <MyMapComp
           isMarkerShown
-          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+          points={points}
+          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${key.key}`}
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `400px` }} />}
           mapElement={<div style={{ height: `100%` }} />}

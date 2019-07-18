@@ -185,3 +185,4 @@ node_modules/
 
 #ignore key getting script
 ex_skeleton/getKey.py
+key.json
