@@ -88,7 +88,7 @@ def calc_score(mode, accidents_per_points):
     elif mode == 'cycling':
         score = score_cycling(accidents_per_points)
     elif mode == 'walking':
-        score == score_walking(accidents_per_points)
+        score = score_walking(accidents_per_points)
     return score
 
 
@@ -130,7 +130,8 @@ def main(start, destination):
             accidents_per_points = get_accidents(points_list)
             score = calc_score(mode, accidents_per_points)
             mode_dict[mode].append(
-                {'route': i, 'score': score, 'distance': distance,
+                {'route': i, 'start': points_list[0], 'end':
+                    points_list[-1], 'score': score, 'distance': distance,
                  'time': time, 'instructions': directions})
     return rank_routes(mode_dict)
 
