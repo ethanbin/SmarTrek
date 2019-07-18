@@ -137,6 +137,6 @@ def main(start, destination):
 
 
 if __name__ == '__main__':
-    start = 'College of staten island'
-    destination = 'wagner college, staten island'
+    start = 'college of staten island'
+    destination = '17 amsterdam place, staten island, new york'
     print(main(start, destination))

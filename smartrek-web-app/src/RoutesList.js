@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
+import newRoutes from './newRoutes.json';
+
 import ModeRoutesList from './ModeRoutesList';
 
 import './RoutesList.css';
@@ -14,6 +16,7 @@ export default class RoutesList extends React.Component {
       {name: 'route 3', rating: 1, mode: 'walk'},
       {name: 'route 4', rating: 2, mode: 'bike'},
     ],
+    newRoutes,
     tabs: [
       {value: 'car', label: 'Car'},
       {value: 'transit', label: 'Transit'},
@@ -23,8 +26,11 @@ export default class RoutesList extends React.Component {
   };
 
   onSelectTab = (value) => {
-    console.log(value);
     this.props.selectTab(value);
+  }
+
+  routeChange = (route) => {
+    this.props.selectRoute(route);
   }
 
   render() {
@@ -33,7 +39,8 @@ export default class RoutesList extends React.Component {
         <Button
           key={index}
           onClick={() => this.onSelectTab(item.value)}
-          variant={item.value === this.props.selected ? "primary" : "secondary"}
+          // variant={item.value === this.props.selected ? "primary" : "secondary"}
+          className={item.value === this.props.selectedTab ? "btn-active" : "btn-inactive"}
         >
           {item.label}
         </Button>
@@ -42,9 +49,14 @@ export default class RoutesList extends React.Component {
 
     return (
       <div className="routesListContainer">
-        <h2>Routes</h2>
-        {buttons}
-        <ModeRoutesList selected={this.props.selected} routes={this.state.routes} />
+        <h3>Routes</h3>
+        <div className="buttonContainer">{buttons}</div>
+        <ModeRoutesList
+          selectRoute={this.routeChange}
+          selectedTab={this.props.selectedTab}
+          routes={this.state.routes}
+          newRoutes={this.state.newRoutes}
+        />
       </div>
     );
   }

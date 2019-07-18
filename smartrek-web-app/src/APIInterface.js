@@ -17,7 +17,7 @@ export async function talk(endpoint, obj){
     return await response.json();
   }
 }
-//
+
 // export function export function get(endpoint, object){
 // 	const response = await fetch(APILocation);
 // 	return await response.json();

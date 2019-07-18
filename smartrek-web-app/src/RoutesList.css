@@ -1,6 +1,46 @@
 .routesListContainer {
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: #eee;
   padding: 5px;
+  border-top: 1px solid #eee;
+  height: 100%;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.btn-active, .btn-inactive {
+  border: none;
+}
+
+.btn-active:hover, .btn-inactive:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-active {
+  background: #fff;
+  border-bottom: 2px solid #007bff;
+  border-radius: 0;
+  color: #007bff;
+}
+
+.btn-active:focus, .btn-inactive:focus {
+  outline: none;
+}
+
+
+.btn-inactive {
+  background: #fff;
+  color: #007bff;
+}
+
+@media only screen and (max-width: 650px) {
+  .routesListContainer {
+    height: inherit;
+  }
 }
