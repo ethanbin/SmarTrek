@@ -135,9 +135,9 @@ def main(start, destination):
             accidents_per_points = get_accidents(points_list)
             score = calc_score(mode, accidents_per_points)
             mode_dict[mode].append(
-                {'route': i, 'start': points_list[0], 'end':
-                    points_list[-1], 'score': score, 'distance': distance,
-                 'time': time, 'instructions': directions})
+                {'route': i, 'points': points_list, 'score': score,
+                 'distance': distance, 'time': time, 'instructions':
+                     directions})
     return rank_routes(mode_dict)
 
 
