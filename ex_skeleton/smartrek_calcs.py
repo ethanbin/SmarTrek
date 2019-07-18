@@ -141,15 +141,6 @@ def main(start, destination):
 
 
 if __name__ == '__main__':
-<<<<<<< HEAD
     start = 'college of staten island'
     destination = '17 amsterdam place, staten island, new york'
     print(main(start, destination))
-=======
-    start = 'College of staten island'
-    destination = 'wagner college, staten island'
-    obj = '{"startLocation": "college of staten island", "endLocation": "17 amsterdam place, staten island, new york"}'
-    parsed = json.loads(obj)
-    print(parsed['startLocation'])
-    print(main(start, destination))
->>>>>>> b3bb616a2690e5a409d71d8bf606a58f1d26812e
