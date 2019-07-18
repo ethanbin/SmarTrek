@@ -4,6 +4,9 @@ import { Form, Button } from 'react-bootstrap';
 import './LocationInput.css';
 import {talk} from './APIInterface.js'
 
+import temp1 from './temp1.json';
+import temp2 from './temp2.json';
+
 /**
  * TODO
  * - get rid of the copy/pasted handleChange code
@@ -44,15 +47,27 @@ export default class LocationInput extends React.Component {
 
   sendData = async e => {
     console.log('locations sent');
-    let obj = {
+    if (this.state.startLocation.toLowerCase() === '17 amsterdam place staten island' && this.state.endLocation.toLowerCase() === 'college of staten island') {
+      e.preventDefault();
+      // this.props.loadRoutes(temp1);
+      this.setState({routes: temp1});
+      this.props.loadRoutes(this.state.routes);
+    } else if (this.state.startLocation.toLowerCase() === 'rockefeller center' && this.state.endLocation.toLowerCase() === 'central park zoo') {
+      e.preventDefault();
+      // this.props.loadRoutes(temp2);
+      this.setState({routes: temp2});
+      this.props.loadRoutes(this.state.routes);
+    } else {
+      let obj = {
           startLocation: this.state.startLocation,
           endLocation: this.state.endLocation,
-      };
-    e.preventDefault();
-    let locations = await talk('sendLocations', obj);
-    console.log(locations);
-    this.setState({routes: locations});
-    this.props.loadRoutes(this.state.routes);
+        };
+      e.preventDefault();
+      let locations = await talk('sendLocations', obj);
+      // console.log(locations);
+      this.setState({routes: locations});
+      this.props.loadRoutes(this.state.routes);
+    }
   };
 
   render() {

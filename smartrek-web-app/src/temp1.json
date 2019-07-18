@@ -1,0 +1,185 @@
+{
+  "walking":[
+    {
+      "route":1,
+      "score":0,
+      "distance":"1.0 mi",
+      "time":"20 mins",
+      "instructions":[
+        ["Head east on Amsterdam Pl toward Richmond Ave",
+        "200 ft"        ],
+        ["Turn left onto Richmond Ave",
+        "466 ft"        ],
+        ["Turn right onto Signs Rd",
+        "62 ft"        ],
+        ["Turn left onto Richmond Ave",
+        "0.3 mi"        ],
+        ["Turn right toward Victory Blvd",
+        "299 ft"        ],
+        ["Turn right onto Victory Blvd",
+        "0.4 mi"        ],
+        ["Turn right onto Loop RdDestination will be on the right",
+        "85 ft"        ]
+      ],
+      "percent":0
+    },
+    {
+      "route":2,
+      "score":0,
+      "distance":"1.3 mi",
+      "time":"27 mins",
+      "instructions":[
+        ["Head west on Amsterdam Pl toward Freedom Ave",
+        "0.1 mi"        ],
+        ["Turn right onto Toddy Ave",
+        "0.1 mi"        ],
+        ["Turn left onto Signs Rd",
+        "0.1 mi"        ],
+        ["Turn right onto Arlene St",
+        "0.3 mi"        ],
+        ["Turn right onto Victory Blvd",
+        "0.2 mi"        ],
+        ["Turn right toward Victory Blvd",
+        "36 ft"        ],
+        ["Turn left toward Victory Blvd",
+        "118 ft"        ],
+        ["Continue onto Victory Blvd",
+        "0.4 mi"        ],
+        ["Turn right onto Loop RdDestination will be on the right",
+        "85 ft"        ]
+      ],
+      "percent":0
+    }
+  ],
+  "driving":[
+    {
+      "route":1,
+      "score":408.5999999999916,
+      "distance":"1.2 mi",
+      "time":"5 mins",
+      "instructions":[
+        ["Head west on Amsterdam Pl toward Freedom Ave",
+        "0.1 mi"        ],
+        ["Turn right onto Toddy Ave",
+        "0.1 mi"        ],
+        ["Turn right onto Signs Rd",
+        "0.1 mi"        ],
+        ["Turn left onto Richmond Ave",
+        "0.3 mi"        ],
+        ["Turn right onto Victory Blvd",
+        "0.3 mi"        ],
+        ["Continue straight to stay on Victory Blvd",
+        "0.2 mi"        ],
+        ["Turn right onto Loop RdDestination will be on the left",
+        "85 ft"        ]
+      ],
+      "percent":0.0
+    }
+  ],
+  "transit":[
+    {
+      "route":1,
+      "score":507.0999999999875,
+      "distance":"1.0 mi",
+      "time":"15 mins",
+      "instructions":[
+        ["Walk to Victory Blvd/Richmond Av",
+        "0.5 mi"        ],
+        ["Bus towards ST GEORGE FERRY via VICTORY",
+        "0.5 mi"        ]
+      ],
+      "percent":45.3
+    },
+    {
+      "route":2,
+      "score":348.9999999999933,
+      "distance":"1.0 mi",
+      "time":"20 mins",
+      "instructions":[
+        ["Walk to 2800 Victory Blvd, Staten Island, NY 10314, USA",
+        "1.0 mi"        ]
+      ],
+      "percent":0.0
+    },
+    {
+      "route":3,
+      "score":515.1999999999877,
+      "distance":"1.1 mi",
+      "time":"16 mins",
+      "instructions":[
+        ["Walk to Richmond Av/Signs Rd",
+        "0.2 mi"        ],
+        ["Bus towards St George Ferry",
+        "0.4 mi"        ],
+        ["Walk to 2800 Victory Blvd, Staten Island, NY 10314, USA",
+        "0.5 mi"        ]
+      ],
+      "percent":47.62
+    },
+    {
+      "route":4,
+      "score":515.1999999999877,
+      "distance":"1.1 mi",
+      "time":"16 mins",
+      "instructions":[
+        ["Walk to Richmond Av/Signs Rd",
+        "0.2 mi"        ],
+        ["Bus towards St George Ferry",
+        "0.4 mi"        ],
+        ["Walk to 2800 Victory Blvd, Staten Island, NY 10314, USA",
+        "0.5 mi"        ]
+      ],
+      "percent":47.62
+    }
+  ],
+  "bicycling":[
+    {
+      "route":1,
+      "score":0,
+      "distance":"1.3 mi",
+      "time":"7 mins",
+      "instructions":[
+        ["Head west on Amsterdam Pl toward Freedom Ave",
+        "0.1 mi"        ],
+        ["Turn right onto Toddy Ave",
+        "0.1 mi"        ],
+        ["Turn right onto Signs Rd",
+        "0.1 mi"        ],
+        ["Turn left onto Richmond Ave",
+        "0.2 mi"        ],
+        ["Turn right onto Eton Pl",
+        "30 ft"        ],
+        ["Turn right",
+        "0.2 mi"        ],
+        ["Turn right",
+        "0.3 mi"        ],
+        ["Turn right onto Victory Blvd",
+        "0.2 mi"        ],
+        ["Turn right onto Loop RdDestination will be on the left",
+        "85 ft"        ]
+      ],
+      "percent":0
+    },
+    {
+      "route":2,
+      "score":0,
+      "distance":"1.3 mi",
+      "time":"7 mins",
+      "instructions":[
+        ["Head west on Amsterdam Pl toward Freedom Ave",
+        "0.1 mi"        ],
+        ["Turn right onto Toddy Ave",
+        "0.1 mi"        ],
+        ["Turn left onto Signs Rd",
+        "0.1 mi"        ],
+        ["Turn right onto Arlene St",
+        "0.3 mi"        ],
+        ["Turn right onto Victory Blvd",
+        "0.7 mi"        ],
+        ["Turn right onto Loop RdDestination will be on the left",
+        "85 ft"        ]
+      ],
+      "percent":0
+    }
+  ]
+}

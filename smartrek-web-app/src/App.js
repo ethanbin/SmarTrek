@@ -28,7 +28,6 @@ export default class App extends React.Component {
   };
 
   loadRoutes = (routes) => {
-    console.log('routes', routes);
     this.setState({routes: routes});
   }
 

@@ -1,0 +1,685 @@
+{
+  "walking":[
+    {
+      "route":1,
+      "points":[
+        {
+          "lat":40.7585616,
+          "lng":-73.9782455,
+          "dist":0
+        },
+        {
+          "lat":40.7586101,
+          "lng":-73.9782093,
+          "dist":6
+        },
+        {
+          "lat":40.7582861,
+          "lng":-73.9774308,
+          "dist":79
+        },
+        {
+          "lat":40.7649754,
+          "lng":-73.9725708,
+          "dist":845
+        },
+        {
+          "lat":40.7651003,
+          "lng":-73.9728164,
+          "dist":29
+        },
+        {
+          "lat":40.76691690000001,
+          "lng":-73.97203569999999,
+          "dist":219
+        }
+      ],
+      "score":38.3,
+      "distance":"0.7 mi",
+      "time":"15 mins",
+      "instructions":[
+        ["Head northeast toward Rockefeller Center",
+        "20 ft"        ],
+        ["Turn right onto Rockefeller Center",
+        "259 ft"        ],
+        ["Turn left onto 5th Ave",
+        "0.5 mi"        ],
+        ["Turn left onto Doris C Freedman Pl/Grand Army Plaza",
+        "95 ft"        ],
+        ["Turn right onto Park RdDestination will be on the left",
+        "0.1 mi"        ]
+      ],
+      "percent":0.0
+    },
+    {
+      "route":2,
+      "points":[
+        {
+          "lat":40.7585616,
+          "lng":-73.9782455,
+          "dist":0
+        },
+        {
+          "lat":40.7586101,
+          "lng":-73.9782093,
+          "dist":6
+        },
+        {
+          "lat":40.7589306,
+          "lng":-73.9785675,
+          "dist":59
+        },
+        {
+          "lat":40.7597338,
+          "lng":-73.9779817,
+          "dist":98
+        },
+        {
+          "lat":40.7605372,
+          "lng":-73.9798962,
+          "dist":188
+        },
+        {
+          "lat":40.7655918,
+          "lng":-73.9762231,
+          "dist":649
+        },
+        {
+          "lat":40.7646777,
+          "lng":-73.9737256,
+          "dist":238
+        },
+        {
+          "lat":40.76652259999999,
+          "lng":-73.9728548,
+          "dist":236
+        },
+        {
+          "lat":40.7666935,
+          "lng":-73.97241989999999,
+          "dist":43
+        },
+        {
+          "lat":40.7666091,
+          "lng":-73.97221750000001,
+          "dist":19
+        },
+        {
+          "lat":40.76691690000001,
+          "lng":-73.97203569999999,
+          "dist":38
+        }
+      ],
+      "score":69.00000000000013,
+      "distance":"1.0 mi",
+      "time":"19 mins",
+      "instructions":[
+        ["Head northeast toward Rockefeller Center",
+        "20 ft"        ],
+        ["Slight left onto Rockefeller Center/Rockefeller Plaza",
+        "194 ft"        ],
+        ["Turn right onto Rockefeller Plaza",
+        "322 ft"        ],
+        ["Turn left onto W 51st St",
+        "0.1 mi"        ],
+        ["Turn right onto 6th Ave",
+        "0.4 mi"        ],
+        ["Turn right onto W 59th St/Central Park S",
+        "0.1 mi"        ],
+        ["Turn left",
+        "0.1 mi"        ],
+        ["Turn right toward Park Rd",
+        "141 ft"        ],
+        ["Turn right toward Park Rd",
+        "62 ft"        ],
+        ["Turn left onto Park RdDestination will be on the left",
+        "125 ft"        ]
+      ],
+      "percent":80.16
+    },
+    {
+      "route":3,
+      "points":[
+        {
+          "lat":40.7585616,
+          "lng":-73.9782455,
+          "dist":0
+        },
+        {
+          "lat":40.7586101,
+          "lng":-73.9782093,
+          "dist":6
+        },
+        {
+          "lat":40.7582861,
+          "lng":-73.9774308,
+          "dist":79
+        },
+        {
+          "lat":40.7585516,
+          "lng":-73.97712829999999,
+          "dist":34
+        },
+        {
+          "lat":40.7578871,
+          "lng":-73.9755374,
+          "dist":153
+        },
+        {
+          "lat":40.7648234,
+          "lng":-73.9705646,
+          "dist":886
+        },
+        {
+          "lat":40.7656661,
+          "lng":-73.9724417,
+          "dist":188
+        },
+        {
+          "lat":40.76691690000001,
+          "lng":-73.97203569999999,
+          "dist":145
+        }
+      ],
+      "score":66.30000000000011,
+      "distance":"0.9 mi",
+      "time":"19 mins",
+      "instructions":[
+        ["Head northeast toward Rockefeller Center",
+        "20 ft"        ],
+        ["Turn right onto Rockefeller Center",
+        "259 ft"        ],
+        ["Turn left onto 5th Ave",
+        "112 ft"        ],
+        ["Turn right onto E 50th St",
+        "0.1 mi"        ],
+        ["Turn left onto Madison Ave",
+        "0.6 mi"        ],
+        ["Turn left onto E 61st St",
+        "0.1 mi"        ],
+        ["Turn right onto Park RdDestination will be on the left",
+        "476 ft"        ]
+      ],
+      "percent":73.11
+    }
+  ],
+  "driving":[
+    {
+      "route":1,
+      "points":[
+        {
+          "lat":40.7582013,
+          "lng":-73.9803013,
+          "dist":0
+        },
+        {
+          "lat":40.7559867,
+          "lng":-73.9749844,
+          "dist":511
+        },
+        {
+          "lat":40.7672472,
+          "lng":-73.96650819999999,
+          "dist":1458
+        },
+        {
+          "lat":40.7686554,
+          "lng":-73.96982249999999,
+          "dist":320
+        },
+        {
+          "lat":40.7680282,
+          "lng":-73.9702767,
+          "dist":80
+        },
+        {
+          "lat":40.7675359,
+          "lng":-73.9706375,
+          "dist":63
+        }
+      ],
+      "score":715.0000000000177,
+      "distance":"1.5 mi",
+      "time":"12 mins",
+      "instructions":[
+        ["Head southeast on W 48th St toward Rockefeller Plaza",
+        "0.3 mi"        ],
+        ["Turn left onto Park Ave",
+        "0.9 mi"        ],
+        ["Turn left onto E 66th St",
+        "0.2 mi"        ],
+        ["Turn left at the 2nd cross street onto 5th Ave",
+        "262 ft"        ],
+        ["Continue straight to stay on 5th AveDestination will be on the right",
+        "207 ft"        ]
+      ],
+      "percent":0.0
+    },
+    {
+      "route":2,
+      "points":[
+        {
+          "lat":40.7582013,
+          "lng":-73.9803013,
+          "dist":0
+        },
+        {
+          "lat":40.7573003,
+          "lng":-73.9781055,
+          "dist":210
+        },
+        {
+          "lat":40.7566585,
+          "lng":-73.9785536,
+          "dist":81
+        },
+        {
+          "lat":40.758019,
+          "lng":-73.9817964,
+          "dist":312
+        },
+        {
+          "lat":40.76563720000001,
+          "lng":-73.97624499999999,
+          "dist":968
+        },
+        {
+          "lat":40.768056,
+          "lng":-73.98139739999999,
+          "dist":524
+        },
+        {
+          "lat":40.7717916,
+          "lng":-73.9792078,
+          "dist":471
+        },
+        {
+          "lat":40.7680282,
+          "lng":-73.9702767,
+          "dist":886
+        },
+        {
+          "lat":40.7675359,
+          "lng":-73.9706375,
+          "dist":63
+        }
+      ],
+      "score":1320.7000000001192,
+      "distance":"2.2 mi",
+      "time":"15 mins",
+      "instructions":[
+        ["Head southeast on W 48th St toward Rockefeller Plaza",
+        "0.1 mi"        ],
+        ["Turn right onto 5th Ave",
+        "266 ft"        ],
+        ["Turn right at the 1st cross street onto W 47th St",
+        "0.2 mi"        ],
+        ["Turn right at the 1st cross street onto 6th Ave",
+        "0.6 mi"        ],
+        ["Turn left onto W 59th St/Central Park S",
+        "0.3 mi"        ],
+        ["At the traffic circle, take the 1st exit onto Central Park West",
+        "0.3 mi"        ],
+        ["Turn right onto 65th St Transverse",
+        "0.6 mi"        ],
+        ["Turn right onto 5th AveDestination will be on the right",
+        "207 ft"        ]
+      ],
+      "percent":84.71
+    },
+    {
+      "route":3,
+      "points":[
+        {
+          "lat":40.7582013,
+          "lng":-73.9803013,
+          "dist":0
+        },
+        {
+          "lat":40.7573003,
+          "lng":-73.9781055,
+          "dist":210
+        },
+        {
+          "lat":40.7566585,
+          "lng":-73.9785536,
+          "dist":81
+        },
+        {
+          "lat":40.760405,
+          "lng":-73.9874535,
+          "dist":858
+        },
+        {
+          "lat":40.7677183,
+          "lng":-73.98210399999999,
+          "dist":930
+        },
+        {
+          "lat":40.7717916,
+          "lng":-73.9792078,
+          "dist":552
+        },
+        {
+          "lat":40.7680282,
+          "lng":-73.9702767,
+          "dist":886
+        },
+        {
+          "lat":40.7675359,
+          "lng":-73.9706375,
+          "dist":63
+        }
+      ],
+      "score":1273.0000000001112,
+      "distance":"2.2 mi",
+      "time":"16 mins",
+      "instructions":[
+        ["Head southeast on W 48th St toward Rockefeller Plaza",
+        "0.1 mi"        ],
+        ["Turn right onto 5th Ave",
+        "266 ft"        ],
+        ["Turn right at the 1st cross street onto W 47th St",
+        "0.5 mi"        ],
+        ["Turn right onto 8th Ave",
+        "0.6 mi"        ],
+        ["At the traffic circle, take the 3rd exit onto Central Park West",
+        "0.3 mi"        ],
+        ["Turn right onto 65th St Transverse",
+        "0.6 mi"        ],
+        ["Turn right onto 5th AveDestination will be on the right",
+        "207 ft"        ]
+      ],
+      "percent":78.04
+    }
+  ],
+  "transit":[
+    {
+      "route":1,
+      "points":[
+        {
+          "lat":40.7585616,
+          "lng":-73.9782455,
+          "dist":0
+        },
+        {
+          "lat":40.7577569,
+          "lng":-73.9756288,
+          "dist":285
+        },
+        {
+          "lat":40.7664304,
+          "lng":-73.96924,
+          "dist":1144
+        },
+        {
+          "lat":40.7675423,
+          "lng":-73.9710822,
+          "dist":194
+        }
+      ],
+      "score":442.0999999999879,
+      "distance":"1.0 mi",
+      "time":"16 mins",
+      "instructions":[
+        ["Walk to Madison Av/E 49 St",
+        "0.2 mi"        ],
+        ["Bus towards HARLEM 147 ST via MADISON AV",
+        "0.7 mi"        ],
+        ["Walk to East 64th Street, New York, NY 10021, USA",
+        "0.1 mi"        ]
+      ],
+      "percent":0.0
+    },
+    {
+      "route":2,
+      "points":[
+        {
+          "lat":40.7585616,
+          "lng":-73.9782455,
+          "dist":0
+        },
+        {
+          "lat":40.7577569,
+          "lng":-73.9756288,
+          "dist":285
+        },
+        {
+          "lat":40.7664304,
+          "lng":-73.96924,
+          "dist":1144
+        },
+        {
+          "lat":40.7675423,
+          "lng":-73.9710822,
+          "dist":194
+        }
+      ],
+      "score":442.0999999999879,
+      "distance":"1.0 mi",
+      "time":"16 mins",
+      "instructions":[
+        ["Walk to Madison Av/E 49 St",
+        "0.2 mi"        ],
+        ["Bus towards HARLEM 147 ST via MADISON AV",
+        "0.7 mi"        ],
+        ["Walk to East 64th Street, New York, NY 10021, USA",
+        "0.1 mi"        ]
+      ],
+      "percent":0.0
+    },
+    {
+      "route":3,
+      "points":[
+        {
+          "lat":40.7585616,
+          "lng":-73.9782455,
+          "dist":0
+        },
+        {
+          "lat":40.7577569,
+          "lng":-73.9756288,
+          "dist":285
+        },
+        {
+          "lat":40.7664304,
+          "lng":-73.96924,
+          "dist":1144
+        },
+        {
+          "lat":40.7675423,
+          "lng":-73.9710822,
+          "dist":194
+        }
+      ],
+      "score":442.0999999999879,
+      "distance":"1.0 mi",
+      "time":"16 mins",
+      "instructions":[
+        ["Walk to Madison Av/E 49 St",
+        "0.2 mi"        ],
+        ["Bus towards HARLEM 147 ST via MADISON AV",
+        "0.7 mi"        ],
+        ["Walk to East 64th Street, New York, NY 10021, USA",
+        "0.1 mi"        ]
+      ],
+      "percent":0.0
+    },
+    {
+      "route":4,
+      "points":[
+        {
+          "lat":40.7585616,
+          "lng":-73.9782455,
+          "dist":0
+        },
+        {
+          "lat":40.7597598,
+          "lng":-73.9801939,
+          "dist":248
+        },
+        {
+          "lat":40.7646786,
+          "lng":-73.97680799999999,
+          "dist":673
+        },
+        {
+          "lat":40.76691690000001,
+          "lng":-73.97203569999999,
+          "dist":693
+        }
+      ],
+      "score":693.7000000000164,
+      "distance":"1.0 mi",
+      "time":"14 mins",
+      "instructions":[
+        ["Walk to West 50 St & 6 Avenue",
+        "0.2 mi"        ],
+        ["Bus towards Limited Washington Heights GW Bridge",
+        "0.4 mi"        ],
+        ["Walk to East 64th Street, New York, NY 10021, USA",
+        "0.4 mi"        ]
+      ],
+      "percent":56.91
+    }
+  ],
+  "bicycling":[
+    {
+      "route":1,
+      "points":[
+        {
+          "lat":40.7582013,
+          "lng":-73.9803013,
+          "dist":0
+        },
+        {
+          "lat":40.7586336,
+          "lng":-73.9813444,
+          "dist":100
+        },
+        {
+          "lat":40.76563720000001,
+          "lng":-73.97624499999999,
+          "dist":889
+        },
+        {
+          "lat":40.7645933,
+          "lng":-73.9736422,
+          "dist":249
+        },
+        {
+          "lat":40.7650826,
+          "lng":-73.9732432,
+          "dist":64
+        },
+        {
+          "lat":40.766552,
+          "lng":-73.97277509999999,
+          "dist":178
+        },
+        {
+          "lat":40.766695,
+          "lng":-73.97240579999999,
+          "dist":36
+        },
+        {
+          "lat":40.7666091,
+          "lng":-73.97221750000001,
+          "dist":19
+        },
+        {
+          "lat":40.76691690000001,
+          "lng":-73.97203569999999,
+          "dist":38
+        }
+      ],
+      "score":0,
+      "distance":"1.0 mi",
+      "time":"8 mins",
+      "instructions":[
+        ["Head northwest on W 48th St toward 6th Ave",
+        "328 ft"        ],
+        ["Turn right onto 6th Ave",
+        "0.6 mi"        ],
+        ["Turn right onto W 59th St/Central Park S",
+        "0.2 mi"        ],
+        ["Turn left onto Grand Army Plaza",
+        "210 ft"        ],
+        ["Slight left",
+        "0.1 mi"        ],
+        ["Turn right toward Park RdWalk your bicycle",
+        "118 ft"        ],
+        ["Turn right toward Park RdWalk your bicycle",
+        "62 ft"        ],
+        ["Turn left onto Park RdWalk your bicycleDestination will be on the left",
+        "125 ft"        ]
+      ],
+      "percent":0
+    },
+    {
+      "route":2,
+      "points":[
+        {
+          "lat":40.7582013,
+          "lng":-73.9803013,
+          "dist":0
+        },
+        {
+          "lat":40.7586336,
+          "lng":-73.9813444,
+          "dist":100
+        },
+        {
+          "lat":40.7657168,
+          "lng":-73.9761894,
+          "dist":899
+        },
+        {
+          "lat":40.7696756,
+          "lng":-73.97307479999999,
+          "dist":679
+        },
+        {
+          "lat":40.766552,
+          "lng":-73.97277509999999,
+          "dist":359
+        },
+        {
+          "lat":40.766695,
+          "lng":-73.97240579999999,
+          "dist":36
+        },
+        {
+          "lat":40.7666091,
+          "lng":-73.97221750000001,
+          "dist":19
+        },
+        {
+          "lat":40.76691690000001,
+          "lng":-73.97203569999999,
+          "dist":38
+        }
+      ],
+      "score":0,
+      "distance":"1.3 mi",
+      "time":"10 mins",
+      "instructions":[
+        ["Head northwest on W 48th St toward 6th Ave",
+        "328 ft"        ],
+        ["Turn right onto 6th Ave",
+        "0.6 mi"        ],
+        ["Continue onto Center Drive",
+        "0.4 mi"        ],
+        ["Slight right",
+        "0.2 mi"        ],
+        ["Turn left toward Park RdWalk your bicycle",
+        "118 ft"        ],
+        ["Turn right toward Park RdWalk your bicycle",
+        "62 ft"        ],
+        ["Turn left onto Park RdWalk your bicycleDestination will be on the left",
+        "125 ft"        ]
+      ],
+      "percent":0
+    }
+  ]
+}
