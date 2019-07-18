@@ -1,19 +1,29 @@
 import React from 'react';
 
 export default class ModeRoutesList extends React.Component {
+  
+  renderArray = (array) => {
+    return (
+      array.map((item, index) =>
+        <li key={index + 1}>Route #{index + 1}: {item.name} - {item.rating} safety rating</li>
+      )
+    )
+  }
+
+  renderRoutes = () => {
+    const routes = [];
+    this.props.routes.forEach((item, index) => {
+      if (item.mode === this.props.selected) {
+        routes.push(item);
+      }
+    });
+    return this.renderArray(routes);
+  }
+
   render() {
-    let element;
-    switch (this.props.selected) {
-      case 'car':
-      case 'transit':
-      case 'walk':
-      case 'bike':
-      default:
-        element = <p>Please select a tab.</p>
-    }
     return (
       <div>
-        {this.props.selected}
+        {this.renderRoutes()}
       </div>
     );
   }

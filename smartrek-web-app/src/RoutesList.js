@@ -22,51 +22,6 @@ export default class RoutesList extends React.Component {
     ],
   };
 
-  renderRoutes = () => {
-    const car = [];
-    const transit = [];
-    const walk = [];
-    const bike = [];
-    this.state.routes.forEach(function(item, index) {
-      switch (item.mode) {
-        case 'car':
-          car.push(item);
-          break;
-        case 'transit':
-          transit.push(item);
-          break;
-        case 'walk':
-          walk.push(item);
-          break;
-        case 'bike':
-          bike.push(item);
-          break;
-        default:
-          break;
-      }
-    });
-    return (
-      <div>
-        <h2>Car</h2>
-        <ul>{this.renderArray(car)}</ul>
-        <h2>Transit</h2>
-        <ul>{this.renderArray(transit)}</ul>
-        <h2>Walk</h2>
-        <ul>{this.renderArray(walk)}</ul>
-        <h2>Bike</h2>
-        <ul>{this.renderArray(bike)}</ul>
-      </div>
-    )
-  }
-
-  renderArray = (array) => {
-    return (
-      array.map((item, index) =>
-        <li key={index + 1}>Route #{index + 1}: {item.name} - {item.rating}</li>
-      )
-    )
-  }
-
   onSelectTab = (value) => {
     console.log(value);
     this.props.selectTab(value);
@@ -88,7 +43,6 @@ export default class RoutesList extends React.Component {
     return (
       <div className="routesListContainer">
         <h2>Routes</h2>
-        {/* {this.renderRoutes()} */}
         {buttons}
         <ModeRoutesList selected={this.props.selected} routes={this.state.routes} />
       </div>
