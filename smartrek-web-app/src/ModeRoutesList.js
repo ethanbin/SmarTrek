@@ -3,7 +3,7 @@ import React from 'react';
 import './ModeRoutesList.css';
 
 export default class ModeRoutesList extends React.Component {
-  
+
   renderArray = (array) => {
     return (
       array.map((item, index) =>
@@ -29,12 +29,13 @@ export default class ModeRoutesList extends React.Component {
   renderNewArray = (array) => {
     return (
       array.map((item, index) =>
-        <li
+        <div
           key={index + 1}
           onClick={() => this.onSelectRoute(item)}
+          className={"modeRoutesListRoute" + (this.props.selectedRoute === item ? " route-selected" : "")}
         >
           Route #{index + 1}: {Math.round(item.score)} safety rating, {item.time}
-        </li>
+        </div>
       )
     )
   }
@@ -64,7 +65,7 @@ export default class ModeRoutesList extends React.Component {
     return (
       <div className="routesList">
         {/* <ul>{this.renderRoutes()}</ul> */}
-        <ul>{this.renderNewRoutes()}</ul>
+        {this.renderNewRoutes()}
       </div>
     );
   }

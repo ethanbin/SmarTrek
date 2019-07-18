@@ -53,6 +53,7 @@ export default class RoutesList extends React.Component {
         <div className="buttonContainer">{buttons}</div>
         <ModeRoutesList
           selectRoute={this.routeChange}
+          selectedRoute={this.props.selectedRoute}
           selectedTab={this.props.selectedTab}
           routes={this.state.routes}
           newRoutes={this.state.newRoutes}

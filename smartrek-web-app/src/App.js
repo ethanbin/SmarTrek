@@ -34,6 +34,7 @@ export default class App extends React.Component {
           <LocationInput />
           <RoutesList
             selectRoute={this.routeChange}
+            selectedRoute={this.state.selectedRoute}
             selectTab={this.pageChange}
             selectedTab={this.state.selectedTab}
           />
