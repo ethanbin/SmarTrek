@@ -3,6 +3,7 @@ from bottle import (get, post, redirect, response,request, route, run, static_fi
                     template)
 
 import json
+import smartrek_calcs as smartrek
 
 # the decorator
 def enable_cors(fn):
@@ -40,7 +41,8 @@ def index():
 @route('/sendLocations' , method=['OPTIONS', 'POST'])
 @enable_cors
 def index():
-    return request.body
+    data = smartrek.bytesIO_to_obj(request.body)
+    return smartrek.main(data['startLocation'], data['endLocation'])
 
 arr = ['a', 'b', 'c']
 @route('/test' , method=['OPTIONS', 'GET'])
